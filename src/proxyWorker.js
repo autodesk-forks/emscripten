@@ -275,6 +275,7 @@ document.createElement = function document_createElement(what) {
       });
 
       canvas.style = style;
+      canvas.onwheel = {};
 
       return canvas;
     }

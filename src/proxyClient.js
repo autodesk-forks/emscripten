@@ -263,7 +263,7 @@ function shouldPreventDefault(event) {
   });
 });
 
-['mousedown', 'mouseup', 'mousemove', 'DOMMouseScroll', 'mousewheel', 'mouseout'].forEach(function(event) {
+['mousedown', 'mouseup', 'mousemove', 'DOMMouseScroll', 'mousewheel', 'mouseout', 'wheel'].forEach(function(event) {
   Module.canvas.addEventListener(event, function(event) {
     worker.postMessage({ target: 'canvas', event: cloneObject(event) });
     event.preventDefault();
